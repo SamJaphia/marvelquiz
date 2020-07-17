@@ -1,7 +1,5 @@
 
-fetch(
-  "http://gateway.marvel.com/v1/public/characters?ts=1&apikey=e13129e03facdc4ffa3ab9b023285e0c&hash=e3b1c102623be1265845c046e1a9c126"
-)
+
   .then((res) => res.json())
 
   .then((data) => {
