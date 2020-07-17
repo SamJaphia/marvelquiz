@@ -1,0 +1,14 @@
+$primaryBtn: #a6dcef; 
+$backGround: black;
+
+@mixin borderBox {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+@import "./Button";
+@import "./Screen";
+@import "./container";
+@import "./body";
