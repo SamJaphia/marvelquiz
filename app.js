@@ -13,11 +13,13 @@ fetch(`https://gateway.marvel.com/v1/public/characters?ts=${timestamp}&apikey=${
   const shuffledQuestions = arr.sort(() => Math.random() - .5)
 
   let index = 0;
-  let buttonOne = 2;
-  console.log(buttonOne)
-  let buttonTwo = 3;
-  let buttonThree = 4;
-  let buttonFour = 5;
+  // let buttonOne = 2;
+  // console.log(buttonOne)
+  // let buttonTwo = 3;
+  // let buttonThree = 4;
+  // let buttonFour = 5;
+
+  let answers = shuffledQuestions.slice(0, 4); // get the first 4 items from the shuffled questions
 
   function nextItem() {
     index++;
@@ -36,27 +38,27 @@ fetch(`https://gateway.marvel.com/v1/public/characters?ts=${timestamp}&apikey=${
     if (btnOne.textContent == characterName.textContent) {
       alert("right answer");
     } else {
-      alert("no answer");
+      alert("wrong answer");
       { window.location.reload() }
     }
+  }
 
-    function optionTwo() {
+  function optionTwo() {
 
-      if (btnThree.textContent == characterName.textContent) {
-        alert("right answer");
-      } else {
-        alert("No answer");
-        { window.location.reload() }
-      }
+    if (btnTwo.textContent == characterName.textContent) {
+      alert("right answer");
+    } else {
+      alert("wrong answer");
+      { window.location.reload() }
     }
+  }
 
-    function optionThree() {
-      if (btnTwo.textContent == characterName.textContent) {
-        alert("right answer");
-      } else {
-        alert("No answer");
-      } { window.location.reload() }
-    }
+  function optionThree() {
+    if (btnThree.textContent == characterName.textContent) {
+      alert("right answer");
+    } else {
+      alert("wrong answer");
+    } { window.location.reload() }
   }
 
   function optionFour() {
@@ -70,23 +72,23 @@ fetch(`https://gateway.marvel.com/v1/public/characters?ts=${timestamp}&apikey=${
 
 
   const characterName = document.getElementById('character-name');
-  characterName.textContent = shuffledQuestions[1];
+  characterName.textContent = answers[Math.floor(Math.random()*4)];
 
-  const btnOne = document.getElementById("btn-1").textContent = shuffledQuestions[buttonOne];
-  console.log(characterName);
+  const btnOne = document.getElementById("btn-1");
+  btnOne.textContent = answers[0];
+  btnOne.addEventListener('click', optionOne);
 
   const btnTwo = document.getElementById("btn-2");
-  btnTwo.textContent = shuffledQuestions[buttonTwo];
-
+  btnTwo.textContent = answers[1];
+  btnTwo.addEventListener('click', optionTwo);
 
   const btnThree = document.getElementById("btn-3");
-  btnThree.textContent = shuffledQuestions[buttonThree];
-
-  console.log(btnThree);
+  btnThree.textContent = answers[2];
+  btnThree.addEventListener('click', optionThree);
 
   const btnFour = document.getElementById("btn-4");
-  btnFour.textContent = shuffledQuestions[buttonFour];
-  btnFour.addEventListener('click', optionFour)
+  btnFour.textContent = answers[3];
+  btnFour.addEventListener('click', optionFour);
 
   document.getElementById("next-btn").addEventListener('click', function (e) {
     characterName.innerText = nextItem();
