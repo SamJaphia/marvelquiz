@@ -1,5 +1,11 @@
-.btn {
-  background-color: orange;
+Button {
+  background-color: red;
+  padding: 5px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
 }
 
 #screen {
@@ -11,15 +17,20 @@
           justify-content: center;
   text-align: center;
   margin: auto;
+  padding-bottom: 20px;
 }
 
 .container {
   max-width: 80%;
-  background-color: red;
+  background-color: orange;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+
+.hide {
+  display: none;
 }
 
 body {

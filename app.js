@@ -49,9 +49,9 @@ fetch(`https://gateway.marvel.com/v1/public/characters?ts=${timestamp}&apikey=${
       alert("right answer");
     } else {
       alert("wrong answer");
-      { window.location.reload() }
+      }  { window.location.reload() }
     }
-  }
+  
 
   function optionThree() {
     if (btnThree.textContent == characterName.textContent) {
@@ -73,6 +73,9 @@ fetch(`https://gateway.marvel.com/v1/public/characters?ts=${timestamp}&apikey=${
 
   const characterName = document.getElementById('character-name');
   characterName.textContent = answers[Math.floor(Math.random()*4)];
+  var marvelPic = data.data.results[1].thumbnail.path + "/portrait_uncanny.jpg";
+  
+  
 
   const btnOne = document.getElementById("btn-1");
   btnOne.textContent = answers[0];
@@ -90,6 +93,8 @@ fetch(`https://gateway.marvel.com/v1/public/characters?ts=${timestamp}&apikey=${
   btnFour.textContent = answers[3];
   btnFour.addEventListener('click', optionFour);
 
+  document.getElementById("marvel-picture").src = marvelPic;
+  
   document.getElementById("next-btn").addEventListener('click', function (e) {
     characterName.innerText = nextItem();
 
