@@ -1,5 +1,5 @@
 Button {
-  background-color: red;
+  background-color: #d3de32;
   padding: 5px;
   text-align: center;
   -webkit-box-pack: center;
@@ -9,24 +9,24 @@ Button {
 }
 
 #screen {
-  height: 20vw;
-  width: 20%;
-  background-color: black;
+  height: 5vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
   margin: auto;
-  padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: 900;
 }
 
 .container {
   max-width: 80%;
-  background-color: orange;
+  background-color: #24a19c;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  padding: 2.5%;
 }
 
 .hide {
@@ -42,5 +42,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #ffc7c7;
+}
+
+.marvelPic {
+  width: 20%;
 }
 /*# sourceMappingURL=styles.css.map */

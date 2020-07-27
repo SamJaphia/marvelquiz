@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,KAAK,EAAE,GAAG;CACb",
+    "sources": [
+        "marvelpic.scss"
+    ],
+    "names": [],
+    "file": "marvelpic.css"
+}

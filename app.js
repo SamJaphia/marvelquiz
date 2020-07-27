@@ -29,9 +29,7 @@ fetch(`https://gateway.marvel.com/v1/public/characters?ts=${timestamp}&modifiedS
   let answers = shuffledQuestions.slice(0, 4); // get the first 4 items from the shuffled questions
 
   function nextItem() {
-    index++;
-    index % arr.length;
-    return arr[index];
+    { window.location.reload() }
 
   }
 
