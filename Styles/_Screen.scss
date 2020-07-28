@@ -1,8 +1,20 @@
 #screen {
-    height: 5vw;
     justify-content: center;
     text-align: center;
     margin: auto;
     font-size: 30px;
     font-weight: 900;
+    width: 80%;
+}
+
+.title {
+    background-color: red;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-top: -0.6%;
+    width: 20%;
+    margin-left: 40%;
+    font-size: 80px;
+    
 }

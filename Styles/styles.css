@@ -1,15 +1,18 @@
 Button {
-  background-color: #d3de32;
+  background-color: red;
   padding: 5px;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 50px;
+  margin-top: 40px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 1.5%;
 }
 
 #screen {
-  height: 5vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -17,10 +20,24 @@ Button {
   margin: auto;
   font-size: 30px;
   font-weight: 900;
+  width: 80%;
+}
+
+.title {
+  background-color: red;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  position: relative;
+  margin-top: -0.6%;
+  width: 20%;
+  margin-left: 40%;
+  font-size: 80px;
 }
 
 .container {
-  max-width: 80%;
+  max-width: 70%;
   background-color: #24a19c;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -29,8 +46,15 @@ Button {
   padding: 2.5%;
 }
 
-.hide {
-  display: none;
+#character-name {
+  visibility: hidden;
+  margin-bottom: -6%;
+}
+
+#attribute {
+  padding-top: 10%;
+  font-weight: 800;
+  font-size: 30px;
 }
 
 body {
@@ -42,7 +66,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #ffc7c7;
+  background-color: black;
+  font-size: 20px;
+  color: white;
 }
 
 .marvelPic {

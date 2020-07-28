@@ -103,7 +103,9 @@ fetch(`https://gateway.marvel.com/v1/public/characters?ts=${timestamp}&modifiedS
   btnFour.addEventListener('click', optionFour);
 
   document.getElementById("marvel-picture").src = marvelPic;
-  
+
+  const marvelAttribution = document.getElementById("attribute");
+  marvelAttribution.innerText = data.attributionText;
   document.getElementById("next-btn").addEventListener('click', function (e) {
     characterName.innerText = nextItem();
 
