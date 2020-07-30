@@ -1,0 +1,24 @@
+{
+  "name": "marvel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamJaphia/marvelquiz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamJaphia/marvelquiz/issues"
+  },
+  "homepage": "https://github.com/SamJaphia/marvelquiz#readme",
+  "devDependencies": {
+    "jest": "^26.1.0",
+    "playwright": "1.2.0",
+    "qawolf": "1.2.0"
+  }
+}

@@ -1,2 +1,5 @@
-secrets.mjs
+.vscode/
+.github/
+node_modules/
 
+secrets.mjs
